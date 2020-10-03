@@ -77,7 +77,6 @@ export default function CityInputForm(props) {
 
                 if (value) {
                     newOptions = [value];
-                    props.placeIdOut(value.place_id);
                 }
 
                 if (results) {
@@ -107,6 +106,7 @@ export default function CityInputForm(props) {
             onChange={(event, newValue) => {
                 setOptions(newValue ? [newValue, ...options] : options);
                 setValue(newValue);
+                props.placeIdOut(newValue.place_id);
             }}
             onInputChange={(event, newInputValue) => {
                 setInputValue(newInputValue);
