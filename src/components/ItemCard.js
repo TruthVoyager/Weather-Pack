@@ -12,7 +12,7 @@ function ItemCard(props) {
         return (<h6 className="items" style={{ margin: 5, textAlign: 'left'}}>- {props.Name}</h6>);
     }
     else {
-        return (<></>);
+        return null;
     }
 }
 
