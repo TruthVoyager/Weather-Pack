@@ -29,8 +29,8 @@ function DayCard(props) {
         <div className="day-card" style={{ display: 'inline-block', verticalAlign:'top', padding: 30}}>
             <h4 style={{margin: 5 }}>{dayName}</h4>
             <i className={chosenIcon}></i>
-            <h4 className="tempHigh" style={{ margin: 5 }}>{props.main.temp_max}</h4>
-            <h5 className="tempLow" style={{ margin: 5 }}>{props.main.temp_min}</h5>
+            <h4 className="tempHigh" style={{ margin: 5 }}>{Math.round(parseFloat(props.main.temp_max))}&#8457;</h4>
+            <h5 className="tempLow" style={{ margin: 5 }}>{Math.round(parseFloat(props.main.temp_min))}&#8457;</h5>
             <h5 style={{ margin: 15 }}>Suggested Items:</h5>
             <div>
                 {itemsArray.map(itemCard => <ItemCard key={itemCard} weatherData={props} {...itemCard} />)}
