@@ -28,16 +28,16 @@ function DayList(props) {
             if (dayValues[dayValues.length - 1].wind.speed < dayChunk.wind.speed) {
                 dayValues[dayValues.length - 1].wind.speed = dayChunk.wind.speed;
             }
-            if (dayChunk.weather[0].main === "Rain" && (dayValues[dayValues.length - 1].weather[0].main != "Snow" || dayValues[dayValues.length - 1].weather[0].main != "Thunderstorm" || dayValues[dayValues.length - 1].weather[0].main != "Squall" || dayValues[dayValues.length - 1].weather[0].main != "Tornado")) {
+            if (dayChunk.weather[0].main === "Rain" && (dayValues[dayValues.length - 1].weather[0].main !== "Snow" || dayValues[dayValues.length - 1].weather[0].main !== "Thunderstorm" || dayValues[dayValues.length - 1].weather[0].main !== "Squall" || dayValues[dayValues.length - 1].weather[0].main !== "Tornado")) {
                 dayValues[dayValues.length - 1].weather[0].main = "Rain";
             }
-            else if (dayChunk.weather[0].main === "Snow" && (dayValues[dayValues.length - 1].weather[0].main != "Thunderstorm" || dayValues[dayValues.length - 1].weather[0].main != "Squall" || dayValues[dayValues.length - 1].weather[0].main != "Tornado")) {
+            else if (dayChunk.weather[0].main === "Snow" && (dayValues[dayValues.length - 1].weather[0].main !== "Thunderstorm" || dayValues[dayValues.length - 1].weather[0].main !== "Squall" || dayValues[dayValues.length - 1].weather[0].main !== "Tornado")) {
                 dayValues[dayValues.length - 1].weather[0].main = "Snow";
             }
-            else if (dayChunk.weather[0].main === "Thunderstorm" && (dayValues[dayValues.length - 1].weather[0].main != "Squall" || dayValues[dayValues.length - 1].weather[0].main != "Tornado")) {
+            else if (dayChunk.weather[0].main === "Thunderstorm" && (dayValues[dayValues.length - 1].weather[0].main !== "Squall" || dayValues[dayValues.length - 1].weather[0].main !== "Tornado")) {
                 dayValues[dayValues.length - 1].weather[0].main = "Thunderstorm";
             }
-            else if (dayChunk.weather[0].main === "Squall" && dayValues[dayValues.length - 1].weather[0].main != "Tornado") {
+            else if (dayChunk.weather[0].main === "Squall" && dayValues[dayValues.length - 1].weather[0].main !== "Tornado") {
                 dayValues[dayValues.length - 1].weather[0].main = "Squall";
             }
             else if (dayChunk.weather[0].main === "Tornado") {
@@ -46,7 +46,7 @@ function DayList(props) {
         }
     }
     //sets the dayData equal to an empty array when a new location's weather information has been recieved. 
-    if ((props.weatherData != lastDayData) && props.weatherData.length > 0) {
+    if ((props.weatherData !== lastDayData) && props.weatherData.length > 0) {
         setDayData([]);
     }
     //sets the dayData equalt to a compiled version of the new weather information. 

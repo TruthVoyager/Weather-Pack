@@ -1,10 +1,16 @@
+How to use this app: 
+- open project in VS code. 
+- open a terminal and make sure npm is installed.
+- type "npm start" to start the application. 
+- enter any location and select a recommendation to pull up weather information for that location and suggestions on what to pack. 
+
 Summary of this App:
-- CityInputForm: Takes in a city and uses it to retrieve weather conditions for the next five days and stor them in an array. Passes the weather array to the App app component through the onSubmit prop.  
-- DayCard: uses the data in its prop to create a DayCard element to reside inside of the DayList. Also uses ItemObjects json to create suggested items. 
-- DayList: Uses the day array in its prop to instansiate a DayCard component for each day in the array, passing a days data to the DayCArd as a prop. 
-- ItemCard: Uses the item data in its prop to determin if an item should be displaied or not. 
+- CityInputForm: Takes in a city and uses it to retrieve weather conditions for the next five days and stores them in an array. Passes the weather array to the App component.  
+- DayCard: uses the data in its prop to create a DayCard element to reside inside of the DayList. Also uses ItemObjects json to create itemCard components. 
+- DayList: Uses the day array in its prop to instansiate a DayCard component for each day in the array, passing a day's data to the DayCard as a prop. 
+- ItemCard: Uses the item data in its prop to determin if an item should be displayed or not. 
 - ItemObjects: contains a JSON array of different items; their name and specific conditions to warrent taking them.
-- App: Takes in a new array from the CityInputForm and stores it as a state which is used to get place latatude and longitude which is used to get place weather data. 
+- App: Takes in a new place object from the CityInputForm and uses it to get place latatude and longitude which is used to get place weather data. 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
