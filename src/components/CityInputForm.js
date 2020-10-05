@@ -8,6 +8,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import parse from 'autosuggest-highlight/parse';
 import throttle from 'lodash/throttle';
 
+//Acuired this component from this site: https://material-ui.com/components/autocomplete/
+
 function loadScript(src, position, id) {
     if (!position) {
         return;
@@ -106,7 +108,8 @@ export default function CityInputForm(props) {
             onChange={(event, newValue) => {
                 setOptions(newValue ? [newValue, ...options] : options);
                 setValue(newValue);
-                props.placeIdOut(newValue.place_id);
+                //this sends the resulting place_id to the app component
+                if (newValue) {props.placeIdOut(newValue.place_id)}
             }}
             onInputChange={(event, newInputValue) => {
                 setInputValue(newInputValue);

@@ -1,0 +1,142 @@
+[
+  {
+    "Name": "Shorts and t-shirt",
+    "conditionTypes": {
+      "Temp": {
+        "Use": "1",
+        "Max": "120",
+        "Min": "73"
+      },
+      "Rain": {
+        "Use": "0",
+        "DontUse": "0"
+      },
+      "Wind": {
+        "Use": "0",
+        "DontUse": "0",
+        "Max": "100",
+        "Min": "30"
+      }
+    }
+  },
+  {
+    "Name": "Light jacket and pants",
+    "conditionTypes": {
+      "Temp": {
+        "Use": "1",
+        "Max": "72",
+        "Min": "50"
+      },
+      "Rain": {
+        "Use": "0",
+        "DontUse": "0"
+      },
+      "Wind": {
+        "Use": "0",
+        "DontUse": "0",
+        "Max": "100",
+        "Min": "30"
+      }
+    }
+  },
+  {
+    "Name": "Winter coat and pants",
+    "conditionTypes": {
+      "Temp": {
+        "Use": "1",
+        "Max": "50",
+        "Min": "-50"
+      },
+      "Rain": {
+        "Use": "0",
+        "DontUse": "0"
+      },
+      "Wind": {
+        "Use": "0",
+        "DontUse": "0",
+        "Max": "100",
+        "Min": "30"
+      }
+    }
+  },
+  {
+    "Name": "Water bottle",
+    "conditionTypes": {
+      "Temp": {
+        "Use": "1",
+        "Max": "120",
+        "Min": "73"
+      },
+      "Rain": {
+        "Use": "0",
+        "DontUse": "0"
+      },
+      "Wind": {
+        "Use": "0",
+        "DontUse": "0",
+        "Max": "100",
+        "Min": "30"
+      }
+    }
+  },
+  {
+    "Name": "Umbrella",
+    "conditionTypes": {
+      "Temp": {
+        "Use": "0",
+        "Max": "50",
+        "Min": "-20"
+      },
+      "Rain": {
+        "Use": "1",
+        "DontUse": "0"
+      },
+      "Wind": {
+        "Use": "0",
+        "DontUse": "1",
+        "Max": "100",
+        "Min": "30"
+      }
+    }
+  },
+  {
+    "Name": "Poncho",
+    "conditionTypes": {
+      "Temp": {
+        "Use": "0",
+        "Max": "50",
+        "Min": "-20"
+      },
+      "Rain": {
+        "Use": "1",
+        "DontUse": "0"
+      },
+      "Wind": {
+        "Use": "1",
+        "DontUse": "0",
+        "Max": "100",
+        "Min": "30"
+      }
+    }
+  },
+  {
+    "Name": "Rain boots",
+    "conditionTypes": {
+      "Temp": {
+        "Use": "0",
+        "Max": "50",
+        "Min": "-20"
+      },
+      "Rain": {
+        "Use": "1",
+        "DontUse": "0"
+      },
+      "Wind": {
+        "Use": "0",
+        "DontUse": "0",
+        "Max": "100",
+        "Min": "30"
+      }
+    }
+  }
+]

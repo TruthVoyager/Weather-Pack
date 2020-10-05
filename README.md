@@ -1,11 +1,10 @@
 Summary of this App:
 - CityInputForm: Takes in a city and uses it to retrieve weather conditions for the next five days and stor them in an array. Passes the weather array to the App app component through the onSubmit prop.  
-- DayCard: uses the data in its prop to create a DayCard element to reside inside of the DayList. 
+- DayCard: uses the data in its prop to create a DayCard element to reside inside of the DayList. Also uses ItemObjects json to create suggested items. 
 - DayList: Uses the day array in its prop to instansiate a DayCard component for each day in the array, passing a days data to the DayCArd as a prop. 
-- ItemCard: Uses the item data in its prop to create an ItemCard element to reside inside of the ItemListComponent. 
-- ItemList: Uses the day array to create an array of suggested packing items as pulled from the ItemObjects JSON file. Instansiates an item card for each item in the items array passing the item details as a prop for its instance. 
+- ItemCard: Uses the item data in its prop to determin if an item should be displaied or not. 
 - ItemObjects: contains a JSON array of different items; their name and specific conditions to warrent taking them.
-- App: Takes in a new array from the CityInputForm and stores it as a state which is passed as a prop to the DayList component and the ItemList component.
+- App: Takes in a new array from the CityInputForm and stores it as a state which is used to get place latatude and longitude which is used to get place weather data. 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
