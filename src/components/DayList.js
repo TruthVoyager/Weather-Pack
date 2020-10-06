@@ -10,15 +10,18 @@ function DayList(props) {
     //creates an array consisting of the most notable data for each day; highest temperature, lowest temperature, highest wind speed, and most severe weather condition
     const compileDay = (dayChunk) => {
         console.log(dayChunk.dt_txt);
-                if (dayValues.length === 0 && dayValues.length < 6) {
+        if (dayValues.length === 0 && dayValues.length < 6) {
             dayValues.push(dayChunk);
-            //console.log(dayValues);
+            console.log(dayValues);
         }
-        else if (parseInt(dayValues[dayValues.length - 1].dt_txt.substring(9, 11)) < parseInt(dayChunk.dt_txt.substring(9, 11)) && dayValues.length < 6) {
+        else if (parseInt(dayValues[dayValues.length - 1].dt_txt.substring(8, 10)) < parseInt(dayChunk.dt_txt.substring(8, 10)) && dayValues.length < 6) {
             dayValues.push(dayChunk);
+            console.log(parseInt(dayValues[dayValues.length - 1].dt_txt.substring(8, 10)));
+            console.log(dayValues);
         }
         else {
-            console.log(parseInt(dayValues[dayValues.length - 1].dt_txt.substring(9, 11)));
+            console.log(dayChunk.dt_txt.substring(8, 10));
+            console.log(parseInt(dayValues[dayValues.length - 1].dt_txt.substring(8, 10)));
             if (dayValues[dayValues.length - 1].main.temp_max < dayChunk.main.temp_max) {
                 dayValues[dayValues.length - 1].main.temp_max = dayChunk.main.temp_max;
             }

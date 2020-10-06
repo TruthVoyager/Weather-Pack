@@ -33,7 +33,7 @@ function DayCard(props) {
             <h5 className="tempLow" style={{ margin: 5 }}>{Math.round(parseFloat(props.main.temp_min))}&deg;F</h5>
             <h5 style={{ margin: 15 }}>Suggested Items:</h5>
             <div>
-                {itemsArray.map(itemCard => <ItemCard key={itemCard} weatherData={props} {...itemCard} />)}
+                {itemsArray.map((itemCard, Index )=> <ItemCard key={Index} weatherData={props} {...itemCard} />)}
             </div>
         </div>
     );
