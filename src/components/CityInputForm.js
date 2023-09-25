@@ -41,7 +41,7 @@ export default function CityInputForm(props) {
     if (typeof window !== 'undefined' && !loaded.current) {
         if (!document.querySelector('#google-maps')) {
             loadScript(
-                'https://maps.googleapis.com/maps/api/js?key=AIzaSyA8Q3_mGxcTWk60zHUfNzM4wowesk2TGSE&libraries=places',
+                'https://maps.googleapis.com/maps/api/js?key=[EnterKey]&libraries=places',
                 document.querySelector('head'),
                 'google-maps',
             );
